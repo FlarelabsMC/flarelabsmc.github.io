@@ -21,21 +21,26 @@
     <script type="module" src="/assests/js/index.js"></script>
 </head>
 <body>
-    <h1 class="md-typescale-display-medium">Hello Material!</h1>
-    <form>
-        <p class="md-typescale-body-medium">
-            Check out these controls in a form!
+    <div id="navbar"></div>
+
+    <div class="content">
+        <h1>
+            <span class="gradient">Expereience</span> beyond our
+            <span class="underlined">years</span>
+        </h1>
+        <p>
+            With years of combined expereience, you can trust
+            <span class="orange">Flarelabs</span> modpacks are going to be the
+            best of quality.
         </p>
-        <md-checkbox></md-checkbox>
-        <div>
-            <md-radio name="group"></md-radio>
-            <md-radio name="group"></md-radio>
-            <md-radio name="group"></md-radio>
-        </div>
-        <md-outlined-text-field
-            label="Favorite color"
-            value="Purple"
-        ></md-outlined-text-field>
-        <md-outlined-button type="reset">Reset</md-outlined-button>
-    </form>
+        <p>See our latest and greatest projects below.</p>
+    </div>
+
+    <script>
+        fetch("/navbar.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
 </body>

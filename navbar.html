@@ -1,0 +1,54 @@
+<nav>
+    <div class="navbar-container">
+        <div class="navbar-logo">
+            <img src="/assests/img/flarelabs.svg" alt="Flarelabs Logo" />
+            <span class="navbar-title gradient">flarelabs</span>
+        </div>
+        <div class="navbar-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </div>
+    <style>
+        /* Navbar styles */
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: var(--background-color);
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar-title {
+            font-size: 1.5em;
+            font-family: "HurmitNerdFont-Bold", sans-serif;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .navbar-links a:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</nav>
