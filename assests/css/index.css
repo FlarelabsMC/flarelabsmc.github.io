@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "HurmitNerdFont-Regular";
+    src: url("/assests/fonts/HurmitNerdFont-Regular.otf") format("opentype");
+}
+
+:root {
+    --background-color: #151a29;
+    --text-color: #fff;
+    --accent-color: #bb5500;
+
+    --md-ref-typeface-brand: "HurmitNerdFont-Regular";
+    --md-ref-typeface-plain: "HurmitNerdFont-Regular";
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "HurmitNerdFont-Regular", sans-serif;
+}
