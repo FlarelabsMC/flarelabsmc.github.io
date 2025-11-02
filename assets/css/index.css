@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "HurmitNerdFont-Regular";
+    src: url("/assets/fonts/HurmitNerdFont-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "HurmitNerdFont-Bold";
+    src: url("/assets/fonts/HurmitNerdFont-Bold.otf") format("opentype");
+}
+
+:root {
+    --background-color: #151a29;
+    --text-color: #fff;
+    --accent-color: #bb5500;
+
+    --md-ref-typeface-brand: "HurmitNerdFont-Regular";
+    --md-ref-typeface-plain: "HurmitNerdFont-Regular";
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "HurmitNerdFont-Regular", sans-serif;
+}
+
+.orange {
+    color: var(--accent-color);
+}
+
+.gradient {
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.underlined {
+    text-decoration: none;
+    background-image: linear-gradient(90deg, #ff8a00 0%, #e52e71 100%);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100% 10px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
